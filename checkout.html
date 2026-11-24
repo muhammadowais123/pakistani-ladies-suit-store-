@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout — ELZARA</title>
+<meta name="description" content="Complete your ELZARA order (demo checkout).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+<!-- Header (announcement bar, logo, navigation, search, icons) is rendered by js/main.js so it is identical on every page -->
+<div id="site-header"></div>
+
+
+<main>
+  <section class="page-hero"><div class="container"><nav class="crumbs"><a href="index.html">Home</a> / <a href="cart.html">Cart</a> / <span>Checkout</span></nav><h1>Checkout</h1><p>Demo checkout — no real payment is taken.</p></div></section>
+  <section class="section section--tight"><div class="container" id="checkout-root">
+    <div class="checkout-layout">
+      <form class="panel" id="checkout-form" novalidate>
+        <h2>Delivery Details</h2>
+        <div class="form-grid">
+          <label class="field"><span>Full Name</span><input name="name" type="text" autocomplete="name" placeholder="e.g. Ayesha Khan"><small class="err" data-error="name"></small></label>
+          <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com"><small class="err" data-error="email"></small></label>
+          <label class="field"><span>Phone Number</span><input name="phone" type="tel" autocomplete="tel" placeholder="+92 300 1234567"><small class="err" data-error="phone"></small></label>
+          <label class="field"><span>City</span><input name="city" type="text" autocomplete="address-level2" placeholder="Lahore"><small class="err" data-error="city"></small></label>
+          <label class="field full"><span>Complete Delivery Address</span><textarea name="address" autocomplete="street-address" placeholder="House / flat no., street, area, postal code"></textarea><small class="err" data-error="address"></small></label>
+          <label class="field full"><span>Order Notes (optional)</span><input name="notes" type="text" placeholder="Anything we should know?"></label>
+        </div>
+        <h2 class="mt-lg">Payment</h2>
+        <div class="pay-opt"><input type="radio" checked disabled aria-label="Cash on delivery"><div><strong>Cash on Delivery (demo)</strong><span>No payment gateway is connected. Placing the order only creates a demo confirmation.</span></div></div>
+        <button class="btn btn-dark btn-block" type="submit">Place Order</button>
+      </form>
+      <aside class="summary"><h2>Order Summary</h2><div id="checkout-summary"></div><a class="link-arrow" href="cart.html">← Edit cart</a></aside>
+    </div>
+  </div></section>
+</main>
+
+<!-- Footer, WhatsApp button, back-to-top and account popup are rendered by js/main.js -->
+<div id="site-footer"></div>
+
+<script src="js/products.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

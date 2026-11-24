@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us — ELZARA</title>
+<meta name="description" content="Contact ELZARA for sizing help, orders and wholesale enquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<!-- Header (announcement bar, logo, navigation, search, icons) is rendered by js/main.js so it is identical on every page -->
+<div id="site-header"></div>
+
+
+<main>
+  <section class="page-hero"><div class="container"><nav class="crumbs"><a href="index.html">Home</a> / <span>Contact</span></nav><h1>Contact Us</h1><p>We would love to hear from you.</p></div></section>
+  <section class="section"><div class="container contact-layout">
+    <div>
+      <h2>Get in Touch</h2>
+      <ul class="info-list">
+        <li><strong>Address</strong><span data-cfg="address"></span></li>
+        <li><strong>Phone</strong><span data-cfg="phone"></span></li>
+        <li><strong>Email</strong><span data-cfg="email"></span></li>
+        <li><strong>Hours</strong>Mon – Sat, 10:00 – 19:00 (PKT)</li>
+      </ul>
+      <p class="mt-lg"><a class="btn btn-dark" id="contact-wa" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57912.36960640001!2d67.11614226485986!3d24.880132613723056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3398c21ee360d%3A0x6114a9b297d321eb!2sShah%20Faisal%20Town%2C%20Pakistan!5e0!3m2!1sen!2s!4v1795558391031!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <form class="panel" id="contact-form" novalidate>
+      <h2>Send a Message</h2>
+      <div class="form-grid">
+        <label class="field"><span>Your Name</span><input name="name" type="text" autocomplete="name"></label>
+        <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email"></label>
+        <label class="field full"><span>Subject</span><select name="subject"><option>Order enquiry</option><option>Sizing help</option><option>Shipping &amp; delivery</option><option>Exchange</option><option>Other</option></select></label>
+        <label class="field full"><span>Message</span><textarea name="message"></textarea></label>
+      </div>
+      <p class="form-msg" id="contact-msg" role="status"></p>
+      <button class="btn btn-dark mt-sm" type="submit">Send Message</button>
+      <p class="muted small mt-sm">Demo form: messages are stored in your browser only. Connect a form service to receive them.</p>
+    </form>
+  </div></section>
+  <section class="section section--beige"><div class="container container--narrow"><div class="section-head"><h2>Frequently Asked Questions</h2></div>
+    <div class="faq">
+      <details><summary>How long does delivery take?</summary><p>Orders within Pakistan typically arrive in 3–5 working days; international orders in 7–14 days (sample policy).</p></details>
+      <details><summary>Can I exchange a size?</summary><p>Yes, stitched pieces can be exchanged within 7 days of delivery, unworn with tags (sample policy).</p></details>
+      <details><summary>Do you ship internationally?</summary><p>Yes. Switch the currency to USD at the top of the page and contact us on WhatsApp for shipping rates.</p></details>
+    </div></div></section>
+</main>
+
+<!-- Footer, WhatsApp button, back-to-top and account popup are rendered by js/main.js -->
+<div id="site-footer"></div>
+
+<script src="js/products.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

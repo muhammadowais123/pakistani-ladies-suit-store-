@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELZARA — Elegance That Defines You | Premium Pakistani Women's Fashion</title>
+<meta name="description" content="ELZARA: luxury Pakistani women's clothing — lawn, chiffon and embroidered suits, stitched and unstitched, shipped worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<!-- Header (announcement bar, logo, navigation, search, icons) is rendered by js/main.js so it is identical on every page -->
+<div id="site-header"></div>
+
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero__img" src="images/banners/hero.jpg" alt="ELZARA luxury Pakistani women's fashion" data-ph="bare">
+    <div class="container"><div class="hero__content">
+      <span class="eyebrow">New Season Collection</span>
+      <h1>Elegance That Defines You.</h1>
+      <p>Luxury lawn, chiffon and embroidered Pakistani couture — thoughtfully crafted for the modern woman, delivered worldwide.</p>
+      <div class="hero__btns"><a class="btn btn-gold" href="shop.html">Shop Now</a><a class="btn btn-ghost-light" href="shop.html?filter=new">New Arrivals</a></div>
+    </div></div>
+  </section>
+
+  <section class="trust"><div class="container trust__in">
+    <div><strong>Worldwide Shipping</strong><span>Pakistan &amp; international</span></div>
+    <div><strong>Premium Fabrics</strong><span>Carefully selected</span></div>
+    <div><strong>Easy Exchange</strong><span>Within 7 days (demo policy)</span></div>
+    <div><strong>WhatsApp Support</strong><span>Size &amp; styling help</span></div>
+  </div></section>
+
+  <!-- FEATURED CATEGORIES -->
+  <section class="section"><div class="container">
+    <div class="section-head"><span class="eyebrow">Featured Categories</span><h2>Shop by Collection</h2><p>From everyday lawn to wedding-season couture.</p></div>
+    <div class="cat-grid" id="home-categories"></div>
+  </div></section>
+
+  <!-- BEST SELLERS -->
+  <section class="section section--beige"><div class="container">
+    <div class="section-head"><span class="eyebrow">Customer Favourites</span><h2>Best Sellers</h2><p>The pieces our customers love most.</p></div>
+    <div class="grid-products" id="home-best"></div>
+    <div class="more"><a class="btn btn-outline" href="shop.html?sort=popular">View All Best Sellers</a></div>
+  </div></section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="section"><div class="container">
+    <div class="section-head"><span class="eyebrow">Just Landed</span><h2>New Arrivals</h2><p>Fresh designs added to the collection.</p></div>
+    <div class="grid-products" id="home-new"></div>
+    <div class="more"><a class="btn btn-outline" href="shop.html?filter=new">View All New Arrivals</a></div>
+  </div></section>
+
+  <!-- PROMO / DISCOUNT SLIDER (content lives in ELZARA_CONFIG.promos in js/products.js) -->
+  <section class="promo-wrap"><div class="container"><div class="promo-slider" id="promo-slider" aria-label="Current offers"></div></div></section>
+
+  <!-- FASHION IN MOTION VIDEO -->
+  <section class="section section--dark" id="fashion-in-motion"><div class="container video-layout">
+    <div class="video-wrap" id="video-wrap">
+      <!-- VIDEO PLACEHOLDER: put your own video at videos/elzara-fashion.mp4 (path set in js/products.js → videoPath) -->
+      <video controls preload="metadata" playsinline><source type="video/mp4"></video>
+      <button class="video-play" type="button" aria-label="Play video"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></button>
+      <div class="video-notice" hidden><strong>Video placeholder</strong>No video file found yet. Add your own fashion video at <code>videos/elzara-fashion.mp4</code> and refresh — the player, poster and controls are already set up.</div>
+    </div>
+    <div class="video-copy">
+      <span class="eyebrow">Fashion in Motion</span>
+      <h2>ELZARA – Fashion in Motion</h2>
+      <p>Watch the fall of the fabric, the detail of the embroidery and the grace of a Pakistani suit in movement.</p>
+      <ul><li>The full outfit, head to toe</li><li>Every angle, front to back</li><li>Fabric and embroidery close-ups</li></ul>
+      <a class="btn btn-gold look-btn" id="shop-look" href="product.html?id=ELZ-012">Shop This Look <span></span></a>
+    </div>
+  </div></section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section"><div class="container">
+    <div class="section-head"><span class="eyebrow">Testimonials</span><h2>Loved by Women Everywhere</h2><p class="small muted">Sample reviews for demonstration — replace with real customer feedback.</p></div>
+    <div class="testi-grid" id="home-testimonials"></div>
+  </div></section>
+
+  <!-- BRAND INTRO -->
+  <section class="section section--beige"><div class="container brand-intro">
+    <img class="brand-intro__img" src="images/banners/brand-story.jpg" alt="The ELZARA story" loading="lazy" data-ph="" data-label="The ELZARA Story" data-sub="Brand image — replace">
+    <div>
+      <span class="eyebrow">Our Story</span>
+      <h2>Crafted in Tradition. Designed for Today.</h2>
+      <p>ELZARA celebrates Pakistan's rich textile heritage through contemporary silhouettes. Every suit is created around exceptional fabric, refined embroidery and a fit that flatters.</p>
+      <p>Whether it is a breezy lawn for everyday elegance or an embroidered organza for a wedding, we design to help you feel confident and unmistakably yourself.</p>
+      <div class="stats"><div><strong>24+</strong><span>Signature designs</span></div><div><strong>7</strong><span>Collections</span></div><div><strong>Global</strong><span>Delivery</span></div></div>
+      <p class="mt-lg"><a class="btn btn-dark" href="about.html">Discover ELZARA</a></p>
+    </div>
+  </div></section>
+
+  <!-- NEWSLETTER -->
+  <section class="section section--dark newsletter"><div class="container">
+    <span class="eyebrow">Stay Connected</span><h2>Join the ELZARA Circle</h2>
+    <p>Be first to see new collections, private offers and styling notes.</p>
+    <div class="nl-msg-wrap"><form class="nl-form js-newsletter" novalidate><input type="email" placeholder="Your email address" aria-label="Email address"><button class="btn btn-gold" type="submit">Subscribe</button></form><p class="form-msg" role="status"></p></div>
+  </div></section>
+</main>
+
+<!-- Footer, WhatsApp button, back-to-top and account popup are rendered by js/main.js -->
+<div id="site-footer"></div>
+
+<script src="js/products.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

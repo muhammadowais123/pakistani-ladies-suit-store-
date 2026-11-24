@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop — ELZARA</title>
+<meta name="description" content="Browse ELZARA's Pakistani women's collection: lawn, luxury lawn, chiffon, embroidered, casual, formal and festive wear.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="shop">
+<!-- Header (announcement bar, logo, navigation, search, icons) is rendered by js/main.js so it is identical on every page -->
+<div id="site-header"></div>
+
+
+<main>
+  <section class="page-hero"><div class="container">
+    <nav class="crumbs"><a href="index.html">Home</a> / <span>Shop</span></nav>
+    <h1 id="shop-title">Shop All</h1><p id="shop-sub">Discover the complete ELZARA collection.</p>
+  </div></section>
+  <section class="section section--tight"><div class="container">
+    <div class="shop-bar">
+      <input id="shop-search" type="search" placeholder="Search by name, fabric, colour…" aria-label="Search products">
+      <select id="shop-type" aria-label="Stitched or unstitched"><option value="">All — Stitched &amp; Unstitched</option><option value="stitched">Stitched</option><option value="unstitched">Unstitched</option></select>
+      <select id="shop-sort" aria-label="Sort products">
+        <option value="featured">Sort: Featured</option><option value="newest">Newest</option><option value="popular">Most Popular</option>
+        <option value="price-asc">Price: Low to High</option><option value="price-desc">Price: High to Low</option><option value="discount">Biggest Discount</option>
+      </select>
+      <label class="chk"><input type="checkbox" id="shop-new"> New arrivals only</label>
+    </div>
+    <div class="chips" id="shop-cats" role="group" aria-label="Categories"></div>
+    <div class="price-filter"><label for="shop-price">Max price</label><input type="range" id="shop-price"><output id="shop-price-out" for="shop-price"></output></div>
+    <p id="shop-count"></p>
+    <div class="grid-products" id="shop-grid"></div>
+  </div></section>
+</main>
+
+<!-- Footer, WhatsApp button, back-to-top and account popup are rendered by js/main.js -->
+<div id="site-footer"></div>
+
+<script src="js/products.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
